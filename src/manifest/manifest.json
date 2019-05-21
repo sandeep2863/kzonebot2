@@ -1,0 +1,106 @@
+{
+  "$schema": "https://statics.teams.microsoft.com/sdk/v1.2/manifest/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.2",
+  "id": "60de6f96-ee18-f5bd-4dbe-358f466e51a4",
+  "version": "0.0.1",
+  "packageName": "com.herokuapp.roombookingdemo",
+  "developer": {
+    "name": "Demo",
+    "websiteUrl": "https://roombookingdemo.herokuapp.com",
+    "privacyUrl": "https://roombookingdemo.herokuapp.com/privacy.html",
+    "termsOfUseUrl": "https://roombookingdemo.herokuapp.com/tou.html"
+  },
+  "name": {
+    "short": "roombooking",
+    "full": "roombooking"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://roombookingdemo.herokuapp.com/roombookingtabTabConfig.html",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "staticTabs": [
+    {
+      "entityId": "3839e295-d079-835c-63db-e8e2db9fb777",
+      "name": "demotab",
+      "contentUrl": "https://roombookingdemo.herokuapp.com/demotabTab.html",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "bots": [
+    {
+      "botId": "e6e3dc4a-556b-4a12-be68-27d4b27f113e",
+      "needsChannelSelector": true,
+      "isNotificationOnly": false,
+      "scopes": [
+        "team",
+        "personal"
+      ],
+      "commandLists": [
+        {
+          "scopes": [
+            "team",
+            "personal"
+          ],
+          "commands": [
+            {
+              "title": "Help",
+              "description": "Shows help information"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "connectors": [
+    {
+      "connectorId": "00000000-0000-0000-0000-000000000000",
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "composeExtensions": [
+    {
+      "botId": "e6e3dc4a-556b-4a12-be68-27d4b27f113e",
+      "canUpdateConfiguration": true,
+      "commands": [
+        {
+          "id": "message",
+          "title": "message",
+          "description": "Add a clever description here",
+          "initialRun": true,
+          "parameters": [
+            {
+              "name": "parameter",
+              "description": "Description of the parameter",
+              "title": "Parameter"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "roombookingdemo.herokuapp.com"
+  ]
+}

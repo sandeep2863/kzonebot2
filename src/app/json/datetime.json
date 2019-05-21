@@ -1,0 +1,86 @@
+{
+    "type": "message",
+  "attachments": [
+{
+    "contentType": "application/vnd.microsoft.card.adaptive",
+    "content": {
+        "type": "AdaptiveCard",
+        "version": "1.0",
+        "backgroundImage":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGQ9YqQ-o2XH21xk2Y4rlTNEN836vQKADEWUv0rXfTwso9MbnLpA",
+
+        "body":[
+   
+            {
+                "type": "TextBlock",
+                "text": "Please select the respective date and time for your booking.",
+                "wrap": true
+            },
+            {
+                "type": "Input.Date",
+                "placeholder": "Start Date",
+                "id": "startDate",
+                "value":""           
+              
+            },
+            {
+                "type": "Input.Time",
+                "placeholder": "Start time",
+                "id": "startTime",
+                "value":"" 
+                
+            },
+            {
+                "type": "Input.Date",
+                "placeholder": "End Date",
+                "id": "endDate",
+                "value":"" 
+               
+            },           
+            {
+                "type": "Input.Time",
+                "placeholder": "End time",
+                "id": "endTime",
+                "value":"" 
+            
+            },
+            {
+                "type": "TextBlock",
+                "text": "What Type of room do you want to book?"
+              },
+              {
+                "type": "Input.ChoiceSet",
+                "id": "room_type",
+                "style": "compact",
+                "value": "",
+                "choices": [
+                  {
+                    "title": "TR",
+                    "value": "TR"
+                  },
+                  {
+                    "title": "ODC",
+                    "value": "ODC"
+                  },
+                  {
+                    "title": "MPH",
+                    "value": "MPH"
+                  },
+                  {
+                    "title": "ANY",
+                    "value": "true"
+                  }
+                ]
+              }
+           
+        ],
+        "actions": [
+            {
+                "type": "Action.Submit",
+                "title": "Submit"
+            }
+        ]
+ 
+}
+}
+  ]
+}

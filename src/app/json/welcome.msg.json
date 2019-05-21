@@ -1,0 +1,64 @@
+{
+    "type": "message",
+    "inputHint": "expectingInput",
+    "text": "Hi! Welcome to room booking system at system!\n\nI'll help you book a room!",
+    "speak": "Hi! Welcome to room booking system at system! I'll help you book a room!",
+    "attachments": [
+      {
+        "contentType": "application/vnd.microsoft.card.adaptive",
+        "content": {
+          "type": "AdaptiveCard",
+          "version": "1.0",
+          "body": [
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "size": "auto",
+                  "items": [
+                    {
+                      "type": "Image",
+                      "size": "medium",
+                      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJSi6YxTAWfR0uP6VAXhNrLzrJPT_1luvPCpS71np_zWMGzbKm"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Start with something like:",
+                      "size": "large",
+                      "weight": "bolder"
+                    },
+                    {
+                      "type": "TextBlock",
+                      "text": "'I want to book a room?'",
+                      "separation": "none"
+                    },
+                    {
+                      "type": "TextBlock",
+                      "text": "or",
+                      "separation": "none"
+                    },
+                    {
+                      "type": "TextBlock",
+                      "text": "'Book a room in garima park.'",
+                      "separation": "none"
+                    },
+                    {
+                      "type": "TextBlock",
+                      "text": "You can also 'restart' or 'cancel' your booking anytime.",
+                      "separation": "none"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
